@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Handlee|Calligraffitti|Over+the+Rainbow|Loved+by+the+King);
+
+body {
+  background-image: url("images/gold-confetti.jpg");
+}
+
+
+header {
+  font-family: "Over the Rainbow";
+  text-align: center;
+  font-size: 2em;
+}
+
+h1 {
+  margin: 0;
+}
+
+#new-todo {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  font-size: .75em;
+  font-family: "Over the Rainbow";
+  text-align: center;
+  border-radius: 360px;
+  outline: none;
+}
+
+#main {
+  background-color: #fff;
+  font-family: "Over the Rainbow";
+  text-align: center;
+  font-size: 2em;
+  border-radius: 360px;
+  border-style: ridge;
+  width: 700px;
+  height: 700px;
+  position: relative;
+  margin-left: 475px;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+#todo-list {
+  list-style-type: none;
+  text-align: left;
+}
+
+#todo-list input.edit {
+  display: none;
+}
+
+#todo-list .editing label {
+  display: none;
+}
+
+#todo-list .editing input.edit {
+  display: inline;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Backbone To Do</title>
+    <link rel="stylesheet" href="screen.css">
+  </head>
+  <body>
+    <section id="todoapp">
+      <header>
+        <h1>To do</h1>
+        <input id="new-todo" type= "text" placeholder="What needs to be done?" autofocus>
+        <div>
+         <a href="#/">show all</a> |
+         <a href="#/pending">show pending</a> |
+         <a href="#/completed">show completed</a>
+        </div>
+      </header>
+      <section id="main">
+        <h3>Get on it!</h3>
+        <ul id="todo-list"></ul>
+      </section>
+    </section>
+
+    <!-- TEMPLATE -->
+    <script type="text/template" id="item-template">
+      <div class="view">
+        <input class="toggle" type="checkbox" {{completed ? 'checked' : ''}}>
+        <label>{{title}}</label>
+        <input class="edit" value="{{title}}">
+        <button class="destroy">remove</button>
+      </div>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js" charset="utf-8"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
